@@ -38,11 +38,12 @@ view: order_items {
   dimension: date_test {
     type: string
     sql: CAST(${returned_date} AS CHAR);;
-    bypass_suggest_restrictions: yes    #  <----- Add either one of these Line 41 or Line 42
-    full_suggestions: yes               #  <----- Add either one of these Line 41 or Line 42
+#     bypass_suggest_restrictions: yes    #  <----- Add either one of these Line 41 or Line 42
+#     full_suggestions: yes               #  <----- Add either one of these Line 41 or Line 42
   }
 
-  filter: date_picker {
+#   filter: date_picker {
+  parameter: date_picker {
     description: "Use with the Category Date"
     type: string
     suggest_dimension: order_items.date_test
