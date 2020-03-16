@@ -27,12 +27,17 @@ view: order_items {
       time,
       date,
       week,
-      month,
+      month,  # <--------- Select this in the Explore Menu
       quarter,
       year
     ]
     convert_tz: no
     sql: ${TABLE}.returned_at ;;
+  }
+
+  dimension: date_test2 {
+    type: date_month      # <--------- Define a dimension of this type for the use case
+    sql: ${returned_date};;
   }
 
   dimension: date_test {
@@ -41,6 +46,7 @@ view: order_items {
 #     bypass_suggest_restrictions: yes    #  <----- Add either one of these Line 41 or Line 42
 #     full_suggestions: yes               #  <----- Add either one of these Line 41 or Line 42
   }
+
 
 #   filter: date_picker {
   parameter: date_picker {

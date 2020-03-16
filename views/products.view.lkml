@@ -77,8 +77,8 @@ view: products {
   measure:selected_measure{
     type: number
     label_from_parameter: measures_parameter
-#     value_format: "[>=1000000]$0.00,,\"M\";[>=1000]$0.00,\"K\";$0.00"
-    value_format: "[${field}='retail_price_percent']0.00%;[${field}='retail_sum' & >=1000000]$0.00,,\"M\";[${field}='retail_sum' & >=1000]$0.00,\"K\";[${field}='retail_sum']$0.00"
+    value_format: "[>=1000000]$0.00,,\"M\";[>=1000]$0.00,\"K\";$0.00"
+#     value_format: "[${field}='retail_price_percent']0.00%;[${field}='retail_sum' & >=1000000]$0.00,,\"M\";[${field}='retail_sum' & >=1000]$0.00,\"K\";[${field}='retail_sum']$0.00"
 #     value_format: "[${field}='Percentage']0.00\%;[${field}='Value']$#,##0.00"
     sql:  {% if measures_parameter._parameter_value == '1' %}
             ${retail_sum}
