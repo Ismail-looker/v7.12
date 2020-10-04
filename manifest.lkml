@@ -10,4 +10,12 @@ project_name: "ismail_look"
 application: main {
   label: "Main Extension"
   file: "main.js"
+  entitlements: {
+    local_storage: yes
+    navigation: yes
+    allow_same_origin: yes
+    allow_forms: yes
+
+
+  }
 }
