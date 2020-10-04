@@ -13,9 +13,9 @@ application: main {
   entitlements: {
     local_storage: yes
     navigation: yes
+    new_window: yes
     allow_same_origin: yes
     allow_forms: yes
-
 
   }
 }
