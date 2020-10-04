@@ -16,6 +16,8 @@ application: main {
     new_window: yes
     allow_same_origin: yes
     allow_forms: yes
-
+    core_api_methods: ["all_looks", "run_look"]
+    external_api_urls: []
+    oauth2_urls: []
   }
 }
