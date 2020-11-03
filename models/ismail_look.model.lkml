@@ -2,6 +2,7 @@ connection: "thelook"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/test.dashboard"
 
 datagroup: ismail_look_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
