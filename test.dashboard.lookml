@@ -1,5 +1,5 @@
 - dashboard: test
-  title: BILD Daily Traffic (mobil optimiert)
+  title: 'BILD Daily Traffic (mobil optimiert)'
   layout: newspaper
   preferred_viewer: dashboards
   elements:
