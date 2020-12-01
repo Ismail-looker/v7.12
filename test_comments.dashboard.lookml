@@ -43,11 +43,11 @@
     type: looker_grid
     dynamic_fields: [{table_calculation: comment_with_strings, label: Comment with
           strings, expression: "concat(\n  concat(${products.brand},\" - \",${products.item_name}),\n\
-          \  \" # \", #Some comment here in the middle\n  concat(${products.id}, \"\
+          \  \" # \", #Some comment T+2 here in the middle\n  concat(${products.id}, \"\
           - \", ${products.brand})\n)\n", value_format: !!null '', value_format_name: !!null '',
         _kind_hint: dimension, _type_hint: string}, {table_calculation: comment_in_between_addition,
         label: Comment in between Addition, expression: "(coalesce(${products.count},0)*-1)\n\
-          +\n(coalesce(${users.count},0)*-1)\n+ #comment here\ncoalesce(\n  if(is_null(${products.count}),\n\
+          +\n(coalesce(${users.count},0)*-1)\n+ #comment T+2 here\ncoalesce(\n  if(is_null(${products.count}),\n\
           \    offset(${products.count},1),\n    ${users.count}\n  )\n,0)", value_format: !!null '',
         value_format_name: !!null '', _kind_hint: measure, _type_hint: number}]
     row: 0
