@@ -48,6 +48,16 @@ view: order_items {
 #     full_suggestions: yes               #  <----- Add either one of these Line 41 or Line 42
   }
 
+  parameter: max_rank {
+    type: number
+  }
+
+  # dimension: rank_limit {
+  #   type: number
+  #   # sql: {% parameter max_rank %} ;;
+  #   sql: {% max_rank._parameter_value %} ;;
+  # }
+
 
 #   filter: date_picker {
   parameter: date_picker {
