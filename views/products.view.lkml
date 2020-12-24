@@ -11,6 +11,11 @@ view: products {
   dimension: brand {
     type: string
     sql: ${TABLE}.brand ;;
+    link: {
+      label: "Name {{order_items.order_id._value}}"
+      url: "https://www.google.com"
+    }
+    html: <a href= "https://www.google.com/search?q={{value}}" target="_blank">{{value}}{{order_items.order_id._value}}</a> ;;
   }
 
   dimension: category {

@@ -20,6 +20,12 @@ explore: events {
   }
 }
 
+explore: any_name_what_so_ever {
+  view_name: orders
+  # view_label: "any_name_what_so_ever"
+  extends: [orders]
+}
+
 explore: inventory_items {
   join: products {
     type: left_outer
